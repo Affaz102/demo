@@ -1,0 +1,42 @@
+SELECT bus_name_en, bus_route.bus_id, bus_route.route_name FROM bus_list INNER JOIN bus_route ON bus_list.bus_id = bus_route.bus_id WHERE bus_route.route_name IN (SELECT bus_name_en, bus_route.bus_id, bus_route.route_name FROM bus_list INNER JOIN bus_route ON bus_list.bus_id = bus_route.bus_id WHERE bus_route.route_name LIKE '%Khilkhet%' or bus_route.route_name LIKE '%Abdullahpur%' )
+
+
+
+
+
+SELECT bus_list.bus_name_en, bus_route.route_index, bus_route.route_name 
+FROM bus_route INNER JOIN bus_list ON bus_list.bus_id = bus_route.bus_id
+WHERE route_name in
+
+(SELECT bus_route.route_name FROM bus_route WHERE bus_route.route_name LIKE '%Khilkhet%' or bus_route.route_name LIKE '%Abdullahpur%' )
+
+
+
+
+
+
+
+
+(SELECT bus_route.bus_id FROM bus_route WHERE bus_route.route_name LIKE '%Merul%') 
+
+INTERSECT 
+
+(SELECT bus_route.bus_id FROM bus_route WHERE bus_route.route_name LIKE '%Gabtoli%')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

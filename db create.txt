@@ -1,0 +1,62 @@
+
+CREATE TABLE destination(
+    dest_id int(5) AUTO_INCREMENT PRIMARY KEY,
+    dest_name varchar(500),
+    dest_desc varchar(5000),
+    dest_type varchar(500),
+    dest_img varchar(500),
+    dest_addr varchar(200),
+    dest_bus_stand varchar(200),
+    dest_onDay date,
+    dest_offDay date,
+    dest_ticket_price int(5)
+
+)
+
+
+
+
+
+INSERT INTO destination(dest_name, dest_desc, dest_type, dest_img, dest_addr, dest_bus_stand, dest_onDay, dest_offDay, dest_ticket_price) VALUES 
+("Ahsan Monjil","Histrycal Place","histry, entertainment, nature","ahsan.jpg","sadarghat","sadarghat","Fri-wed","Thus Day",100),
+("Shahabag Jadughar","Histrycal Place","histry, entertainment, nature","shahbag.jpg","shahbag","shahbag","Fri-wed","Thus Day",100),
+("Novo Theator","Entertainment","science, entertainment, nature",".jpg","sadarghat","sadarghat","Fri-wed","Thus Day",300),
+("Muktijoddha Jadughar","Histrycal Place","histry, entertainment","mukti.jpg","agargou","agargou","Fri-wed","Thus Day",200),
+("Zoo","Entertainment for kid","entertainment, nature, animal","zoo.jpg","chiriakhana","chiriakhana","Fri-wed","Thus Day",100),
+("Botanic","Nature","entertainment, nature","botanic.jpg","mirpur 1","mirupur 1","Fri-wed","Thus Day",50),
+("Jomuna Feature","chilling place","entertainment","jomuna.jpg","mohakhali","mohakhali","Fri-wed","Thus Day",400)
+
+
+
+
+
+CREATE TABLE guid(
+    guid_id int(5) PRIMARY KEY AUTO_INCREMENT,
+    guid_name varchar(200),
+    guid_gender varchar(10),
+    guid_age int(3),
+    guid_charge int(5),
+    guid_phone int(11)
+)
+
+
+
+
+INSERT INTO guid(guid_name, guid_gender, guid_age,guid_charge, guid_phone) VALUES
+("Faruk Rahman",'M',35,100,1111111111),
+("Hasan Mahmud",'M',28,100,2222222222),
+("Ahmad Musa",'M',37,100,333333333333),
+("Jamil Sadik",'M',55,200,44444444444),
+("Kabir Ahmed",'M',21,100,555555555555),
+("Shamim Reja",'M',46,150,666666666666),
+("Sabbir Nayek",'M',25,100,4444444444),
+("Jarin Akter",'F',35,200,66666666666),
+("Jarin Akter",'F',26,100,22222222222),
+("Jarin Akter",'F',19,100,1111111111),
+("Jarin Akter",'F',28,150,3333333333)
+
+
+
+
+
+
